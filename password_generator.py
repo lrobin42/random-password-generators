@@ -23,7 +23,6 @@ def generate_random_password(
         password_characters += symbol_chars
 
     for i in range(password_length):
-        # idx = i % len(password_characters)
         password += password_characters[randint(0, len(password_characters))]
 
     return password
